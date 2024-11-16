@@ -1,404 +1,554 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html>
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 7.3.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
-
-<link rel="stylesheet" href="/css/main.css">
-
-
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
-  </script>
-
-  <meta property="og:type" content="website">
-<meta property="og:title" content="joker-an">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta charset="utf-8">
+  <title>joker-an</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="joker-an">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="about">
+<meta property="og:url" content="http://example.com/about/index.html">
 <meta property="og:site_name" content="joker-an">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-10-20T01:58:10.000Z">
+<meta property="article:modified_time" content="2024-10-20T01:59:12.931Z">
 <meta property="article:author" content="joker-an">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/">
 
+<link rel="icon" href="/img/avatar.jpg">
 
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : true,
-    isPost : false,
-    lang   : 'zh-CN'
-  };
-</script>
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
 
-  <title>joker-an</title>
-  
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
 
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
 
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
 
-
-
-
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
-
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
-    </div>
-  </div>
-
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">joker-an</h1>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-      <p class="site-subtitle" itemprop="description">joker-an</p>
-  </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-    </div>
-  </div>
-</div>
-
-
-
-
-<nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
-
-  </li>
-  </ul>
-</nav>
-
-
-
-
-</div>
-    </header>
-
-    
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
-
-
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-
-          <div class="content index posts-expand">
-            
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/14/%E7%BD%91%E7%BB%9C%E5%B1%82%E6%B5%8B%E8%AF%84/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="joker-an">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="joker-an">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/11/14/%E7%BD%91%E7%BB%9C%E5%B1%82%E6%B5%8B%E8%AF%84/" class="post-title-link" itemprop="url">网络层测评</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2024-11-14 23:11:14 / 修改时间：23:32:22" itemprop="dateCreated datePublished" datetime="2024-11-14T23:11:14+08:00">2024-11-14</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="网络层证据收集"><a href="#网络层证据收集" class="headerlink" title="网络层证据收集"></a>网络层证据收集</h1><hr>
-<p>[toc]</p>
-<h2 id="测评对象划分"><a href="#测评对象划分" class="headerlink" title="测评对象划分"></a>测评对象划分</h2><blockquote>
-<p>网络和通信安全层面的测评对象主要是针对跨网络访问的通信信道，</p>
-</blockquote>
-<p>这里的<strong>跨网络访问</strong>指的是<strong>从不受保护的网络区域访问被测系统</strong>。</p>
-<p>可以从<strong>通信主体</strong>和<strong>网络类型</strong>两个方面来确定网络和通信安全层面的</p>
-<p>测评对象：</p>
-<ol>
-<li>网络类型：这里主要依据<strong>网络之间是否相对独立</strong>进行分类，如</li>
-</ol>
-<p>互联网、政务外网、企业专网等；</p>
-<ol start="2">
-<li><p>通信主体:  指的是<strong>参与通信的各方</strong>，典型的如客户端与服务端。</p>
-<p>例如，PC机上运行的浏览器与服务器上运行的web服务系统，移动智能终</p>
-<p>端上运行的APP与服务器上运行的应用系统；也可以是服务端与服务端，</p>
-<p>例如，IPSec VPN与IPSec VPN之间。</p>
-
-
-<p>划分通道：</p>
-</li>
-</ol>
-<h2 id="证据收集"><a href="#证据收集" class="headerlink" title="证据收集"></a>证据收集</h2><img src="/2024/11/14/%E7%BD%91%E7%BB%9C%E5%B1%82%E6%B5%8B%E8%AF%84/%E7%BD%91%E7%BB%9C%E5%92%8C%E9%80%9A%E4%BF%A1.png" class="">
-
-<h2 id="结果记录"><a href="#结果记录" class="headerlink" title="结果记录"></a>结果记录</h2><p>&#x3D;&#x3D;示例：&#x3D;&#x3D;</p>
-<h3 id="身份鉴别"><a href="#身份鉴别" class="headerlink" title="身份鉴别"></a>身份鉴别</h3><p>1）经核查，政务外网用户通过非国密浏览器访问XXX系统，通过应用安全网关代理后访问，其通信协议为TLS1.2，通信双方协商的密码算法套件为TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256，通信过程中证书交换过程中的算法OID为1.2.840.113549.1.1.1，故政务外网非国密浏览器与XXX系统之间的通信信道使用的身份鉴别算法为RSA2048，如图2-1，图2-2所示。</p>
-<p>2）经核查站点证书，SSL证书处于有效期内，为自签证书。如图2-3。</p>
-<p>3）通过核查应用安全网关证书配置和基本配置。确认该通道是应用安全网关建立，如图2-4所示。</p>
-<p>4）经核查以及实地查看，该通道通过应用安全网关代理实现。应用安全网关具备商用密码产品认证证书，符合GM&#x2F;T 0028《密码模块安全技术要求》第二级要求、GM&#x2F;T 0025《SSL VPN网关产品规范》。在现场评估期间，证书在有效期内，且机房内部署的应用安全网关与商用密码产品认证证书一致。该层面涉及的密钥均通过密码产品内进行管理，符合密钥的生命管理周期。如图9-1所示。</p>
-<h3 id="通信数据完整性"><a href="#通信数据完整性" class="headerlink" title="通信数据完整性"></a>通信数据完整性</h3><p>1）经核查，政务外网用户通过非国密浏览器访问XXX系统，通过应用安全网关代理后访问，其通信协议为TLS1.2，通信双方协商的密码算法套件为TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256，政务外网非国密浏览器与XXX系统之间的通信信道使用的通信数据完整性算法为SHA256，如图2-1，图2-2所示。</p>
-<p>2）经核查站点证书，SSL证书处于有效期内，为自签证书。如图2-3。</p>
-<p>3）通过核查应用安全网关证书配置和基本配置。确认该通道是应用安全网关建立，如图2-4所示。</p>
-<p>4）经核查以及实地查看，该通道通过应用安全网关代理实现。应用安全网关具备商用密码产品认证证书，符合GM&#x2F;T 0028《密码模块安全技术要求》第二级要求、GM&#x2F;T 0025《SSL VPN网关产品规范》。在现场评估期间，证书在有效期内，且机房内部署的应用安全网关与商用密码产品认证证书一致。该层面涉及的密钥均通过密码产品内进行管理，符合密钥的生命管理周期。如图9-1所示。</p>
-<h3 id="通信过程中重要数据的机密性"><a href="#通信过程中重要数据的机密性" class="headerlink" title="通信过程中重要数据的机密性"></a>通信过程中重要数据的机密性</h3><p>1）经核查，政务外网用户通过非国密浏览器访问XXX系统，通过应用安全网关代理后访问，其通信协议为TLS1.2，通信双方协商的密码算法套件为TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256，政务外网非国密浏览器与XXX系统之间的通信信道使用的通信数据机密性算法为AES128，如图2-1，图2-2所示。</p>
-<p>2）经核查站点证书，SSL证书处于有效期内，为自签证书。如图2-3。</p>
-<p>3）通过核查应用安全网关证书配置和基本配置。确认该通道是应用安全网关建立，如图2-4所示。</p>
-<p>4）经核查以及实地查看，该通道通过应用安全网关代理实现。应用安全网关具备商用密码产品认证证书，符合GM&#x2F;T 0028《密码模块安全技术要求》第二级要求、GM&#x2F;T 0025《SSL VPN网关产品规范》。在现场评估期间，证书在有效期内，且机房内部署的应用安全网关与商用密码产品认证证书一致。该层面涉及的密钥均通过密码产品内进行管理，符合密钥的生命管理周期。如图9-1所示。</p>
-<h3 id="网络边界访问控制信息的完整性"><a href="#网络边界访问控制信息的完整性" class="headerlink" title="网络边界访问控制信息的完整性"></a>网络边界访问控制信息的完整性</h3><p>1）经核查，政务外网非国密浏览器到XXX系统的通信信道的流量需经过边界防火墙-&gt;外网核心交换机-&gt;应用安全网关等设备。</p>
-<p>2）经现场核查，通信信道中涉及的应用安全网关具备商用密码产品认证证书，实际部署型号及版本与证书信息一致，密码模块符合GMT 0028《密码模块安全技术要求》第二级要求，如图9-1所示。</p>
-<p>3）经访谈并核查，其通道内涉及的防火墙、核心交换机等暂未使用密码技术对边界访问控制信息如ACL、路由等进行存储完整性保护。</p>
-<p>4）综上应用安全网关的访问控制信息完整性为符合，防火墙和核心交换机的访问控制信息完整性为不符合，故该通信信道涉及的网络边界访问控制信息为部分符合，测评得分为0.5分。</p>
-<h3 id="安全接入认证"><a href="#安全接入认证" class="headerlink" title="安全接入认证"></a>安全接入认证</h3><p>经访谈及核查《XXX系统密码应用方案》，方案中已确认该测评单元不适用，且密码应用方案已通过密评机构评估。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
-  
-
-
-
-          </div>
-          
-
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
 <script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
+    hljs.initHighlightingOnLoad();
 </script>
 
-        </div>
-          
-  
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
 
-  <aside class="sidebar">
-    <div class="sidebar-inner">
 
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          文章目录
-        </li>
-        <li class="sidebar-nav-overview">
-          站点概览
-        </li>
-      </ul>
 
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-      </div>
-      <!--/noindex-->
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
 
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">joker-an</p>
-  <div class="site-description" itemprop="description"></div>
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
 </div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
+
+
+
+<body>
+<aside class="nav mobile">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
+</a>
+<div class="author">
+    <span>joker-an</span>
+</div>
+
+<div class="icon">
+    
         
-          <span class="site-state-item-count">1</span>
-          <span class="site-state-item-name">日志</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">2</span>
-        <span class="site-state-item-name">标签</span>
-      </div>
-  </nav>
+            <a title="rss"
+               href="/atom.xml"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-rss"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="github"
+               href="https://github.com/yelog"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="facebook"
+               href="https://www.facebook.com/faker.tops"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-facebook"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+    
+        
+            <a title="instagram"
+               href="https://www.facebook.com/faker.tops"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-instagram"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="reddit"
+               href="https://www.reddit.com/user/yelog/"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-reddit"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="weibo"
+               href="http://weibo.com/u/2307534817"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-weibo"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="jianshu"
+               href="https://www.jianshu.com/u/ff56736de7cf"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-jianshu"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="zhihu"
+               href="https://www.zhihu.com/people/jaytp/activities"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-zhihu"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+            <a title="oschina"
+               href="https://my.oschina.net/yelog"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-oschina"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+            <a title="email"
+               href="mailto:jaytp@qq.com"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-email"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="qq"
+               href="http://wpa.qq.com/msgrd?v=3&uin=872336115&site=qq&menu=yes"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="kugou"
+               href="https://www.kugou.com/"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-kugou"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="neteasemusic"
+               href="https://music.163.com/#/user/home?id=88151013"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-neteasemusic"></use>
+                    </svg>
+                
+            </a>
+        
+    
 </div>
 
 
 
-      </div>
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="全部文章">全部文章
+            
+                <small>(1)</small>
+            
+        </div>
+    </li>
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+    </div>
+    <div>
+        
+            <a class="about  hasFriend  site_url"
+               
+               href="/about">关于</a>
+        
+        <a style="width: 50%"
+                
+                                           class="friends">友链</a>
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="1">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
 
     </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2024</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">joker-an</span>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
-  </div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">全部文章</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
 
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
         
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>现场测评</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>原创</a>
+            </li>
+        
+    </div>
 
+</div>
 
+    
+    <nav id="title-list-nav">
+        
+        
+        <a  class="全部文章 "
+           href="/2024/11/14/%E7%BD%91%E7%BB%9C%E5%B1%82%E6%B5%8B%E8%AF%84/"
+           data-tag="原创,现场测评"
+           data-author="" >
+            <span class="post-title" title="网络层测评">网络层测评</span>
+            <span class="post-date" title="2024-11-14 23:11:14">2024/11/14</span>
+        </a>
+        
+        <div id="no-item-tips">
 
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
 
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post" class="index">
+    <div class="pjax">
+        <article class="index">
+            <div class="toc-ref">
+    
+        
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+            <p>podlp   <br>WARNING! This file has been encrypted, DO NOT edit or save this file, otherwise the content of this file will be damaged!     <br>注意！本文件是加密文件，请勿编辑或保存本文件，否则将导致文件内容损坏！</p>
+<p>                                                                                                                         <br>#OS:win64<br>   &lt;i1ߪ�W</p>
+<p>C��A�9�’����?�תY��hGk��q�����A<br>��<br>uYg�&lt;�.ۨtg��t�:��#���N<del>�YA���RZ�G��’���LL�Y�H�����}���j�X�O�ŝ���ȭ�xY�!����ςY�$�Al����������’D�P�╍�����u�uK̾4��!:�&#x2F;S�۾p5�)-D�X�	��ۖ�4(�,�v����8�Y�}k�7w��’K�y��<br>6�	��X��[Q$��O�X����s��׈��s��<br>^8X_�%�V�1T	���(�D���VT���g���Q�����$��t�W�w�W���zIK)Q?1\G��<em>�#&#x3D;��]��AεI��A�ʩf����N��g[��d�</em>(��f��0D���<br>Afʜ��5�”5�y�ƐSZE�a.�(19��Y���|�S��R�&lt;ùث���S�</del>�”{���ǲ�9{�|a5#Kl뻓�K��&lt;W_mF^+��k|�lٶ��-�1H��6�C�&#x2F;b�HR���;�d��ܡ�fkkr�h�6�<code>muĐ/��c�k{&#39;���;�d�jvh����=�q���8�Ʈz�s����� ���A	e�UP��]H ]�&gt;S��ȥ(v��+�n��p�a̙3�L�!D�d�,���%��W�/h�W9u1DgW.�s�܁�� ��Z�Ĥ&amp;�����N���I�.Oi�&gt;�)��I��t8�+�Ug�R�</code>�o���p�-�v�T�^s���v����Ү����+����&amp;�?O<em>�8��T0�j&#x2F;��H<code>�.�&#39;��u8%&lt;R2������&#39;����&amp;_	�X�!i��y��?/��ֽ@ ��74��^���7�e�6���U�2�	��puZ��ޛV</code>D�.��i@QIا�Q$�<del>ǻ<code>#:����:ϰ��o��i�q��� bO&gt;}&gt;��cE���ُ�m��^�0��g��G&lt;��vx��Â$΍Ƭz�eT4�*	D}��#���U�7R�b�FT����־�?�����m�� ���h@���(��ǁU�婖�鲛�|</code>��0�@�<em>� �z_�\�\����D��9H+@�Sc�E<br>�y��l���m.�6b���N�8�Zܶ9��ȆX�\����;�ЫE����8�#M��;�U�ώ�&lt;��63�V[,�9�m9��W1�7&#96;�&lt;�b1�xQe�</em>%��}�:3e]��9߿���y��<br>�$O�� �v<br>�6�8��懈\���q���N�\jtgI�Y�.��a&#x3D;��)u����w,��Zp_�sN�2���6j6����+T�::�7���<br>Мͩ&lt;�m�]�3��zɻ�:M�$X�R}t�R����’�ݧk��x}&amp;4^�����\���q�2݁{͙a20P��dJ<br>?�@��o���|�va��ݑ��n���۽)�R�!���F��l�w�NVgi�</del>,�53I�4���r��S���մ�G��5]��d3B[@�[�3n���r’���ϒP3���E’?��#����Z���������&amp;�$a��4�R^�\����ޑ�-8w�+?��”(�#p-&#x3D;�Q�&gt;i�”ZӶ%hI����� ��!u�)�U(L^�tnݬ\�İc��M�q]R�i�p’���@�Q���|4�”�Mt��x.<em>��Q�\L�3;�Bn4�Ĝ��5c��l���$<br>��#25�����&amp;gW<code>�����Ad��1v�ؽN��#^�u�����5D����XI�&quot;�S&amp;�.��ܤ��=��Kb��7�+�Z�|%�ґ�K�Yd�&lt;V�}n�P^.N9G�5�Y{%���5��Qϓ�)����MB�����9����+�P��TX/r9 �6;l��b�p�Ȍ\���]&gt; ަ�^o��&amp;&quot;���qz�b��?��ӏfl�$�Ҕ\HiJ&quot;�z�b�&#39;� 8q $��biͫ�J� ßlE%?��tA/�]ٯ}�~&#39;�o.��)@x���CN���d�Z.��g7</code>I�&gt;��<code>g/�D,�x���e��@���8qtR3�5m9d[|�?�*��,�b �OpQQe�+,bd�F�fW��J�G�&quot;?� &amp;� �vZ�s�o���8�O����</code>������K:����#��H�H�_0s;�t��������(y�</em><code>&quot;��F?vTr ���c�f���wS���bƂ�!ڍ�1	*��M� ��P����ފ�~��, �@����1z��=-a�Hl�RT�KM�.Rcf�&#39;G�i1�ܓ^�;��&gt;��n\</code>���D����B}� ��K��@�p�,��&amp;�</em>�M<code>=�&gt;j�</code>&amp;&gt;�y��c�S%o��Ο�’;��MZH)�	�8]e�f��[�ޔ+�����:Y���<del>����,ͫ��e�7HLj�(� ���Ze��?RQa�(�&#x3D;:)\�������i��Z<code>;��,��^��d�cb��r�L���Xe��*2�H�Jh�G����a]��޶�o���Sx��!�+-@��gϐ�*7�YWG��lj��&gt;�嗰����t�O cf%���M%VC��% E޴��Nq�#��h�ut&quot;��o&gt;$F�B��D�G&amp;�����vf]�]2��fK�61��¬��)D�8������ Ǐ-���kG�B��i���.�ܲ�b�-�j�1�d�d��5�MZf1F���/c� � !&quot;?�;L����ѯ�1H�MG�h;bȵ�,ihOצw��t�O����Ҡ��&amp;l ��	��FhN-�_E�h��A�����K�A��J�Z!w �Z��F���Y�����! m���n�Qw6S�</code>��’��!���*��� ��e����B���$&lt;lh ST��<br>0�<br>ZG��(‘������G�r�Z_��m�J���ߐ</del>%�&lt;�:<br>���w3���@�麋&gt;�C�&gt;��<br>Q[,�}f�ά�܉Q��MN,<code>��o�44:I-�p�%�%�_���r�?\���1��rd��!��d/�����~Ly��^?dJ�9^�b��&#39;�4ٱ���, Ā%�&lt;F����t~&amp;�&gt;��Gu�����KB��}�l�h��N�bn�]H�gU\CO�b�b:��D���S )������ͤ�R�FcU�=?�\�k�DB׫s��z���7N�̣ġ����&quot;%5��&lt;މč8�j��g&amp;_,�ҫ��T��v�-yzz_6��&quot;�ғ1�tf�v�� �AH / A��3&quot;�Y�</code>��0H������j�9<em>�@��Y��&amp;{@�^8���_BVK�i</em>8ѬY<br><del>��Ǐ�^Ea�ҧ6�ڨ3�Q&gt;���+��;�Vw߲	ſ���뚩Y ��S$O�	P%��K��K�S�7�!��+8_��9���a�� �Ǹ5�W�i�m�v�O�m�E�ؠ����_C�z�&#96;�v|ٷ�q�c��*Η�s��^�&gt;Uw�̾L”5nh}c�afn}��a�!�F��4���B����e���Uw��Մ�”���+�Qû�{|+�+�<br>�%øa���&lt;�6���|</del>���Q�� Ex�H�K9엮W�l<br>H��?����a%’G�q@���fI’j�p�ڵ�Xq<code>���n�ܬ� z�^8z:�%HGFŇrJf�6B���o�c^����F+</code>� �����{�h{1����d�c5���HH����f��,�.�R���?9uu�i�X�h�eK��yۥ�����M�”�BU�HLW�hQ[���Q�H����� �)�i��{M��Ra���6o�HV�±�G]�o�?J	Ɂ�S� (���aW�A’�e����I��o���G���&amp;�x���(��<del>��s0��!�ѶUŒ$���H���2F�&amp;%�����?&lt;s���)V��ζ5�&#x2F;^)�[Z�ކ&#96;,�ðy;��7V��}�,��*�ilz�</del>�%Z��i��$�&amp;&#x3D;��[<br>�0&#x2F;���&#x3D;qJH}Ȥs7u���4!b����<br>X���yѡ��ly��’�Xw�&gt;�����5b�V&#x3D;^�ّ~~�֔�)А4�8X��I<br>��f	z��323���8$ۢ��Մ����<br>�Q��z$�^	,J�0������� e�0���2¸^�’����e�.%�n&amp;���2)�Y�����L�M��E}]JVW�<del>R���㧂U����bdc����{������f�)&amp;�΋�^��ܪ��Fɪ�� �pQl�1�$F”C:��<br>mN(�ق���oS�9KW���L�m���ϟ�N�%w�F����q��j�)Eu3G����N�;�{ NW��d7����������3� ?(�۲[S�M�ՕT�;�0���<em>8M�!<br>�\�;�4�!’	;���&#x2F;.�<br>R�J�����</em>,M�Rnn㬭���C�^�9���S��f�f���O]j��z�f ڮ��r�S�ϡ�Pa�L#pDY��2���4d_�][���PnTX�?�1�3�����en�����P��H[���?,����y9�ۈ� ��(�1G�*�$#���&lt;�,��&#x2F;��K�Q��6����3.�!&amp;p����? �6����ܑOe����x&amp;P����:��놓zxJ-[G#j&#x2F;��x|�ТV%Uӌ���</del>ԁ�c].�’���NJ�*e࿑��Z������’�q�+՚�F+���D�tF�57��m�i�bI@�k�O�� �E� U{ٷnU�Å^���m��3����y&amp;\9�n��@��G�@�%���5lX�(!JX�Y[�X3+q���o �9�P)�la�|e����V�5Oزi�x��1�&#x3D;���}б���”q�’�:��ޟ��P�</p>
 
+        </article>
+        
+        <p>
+            <a  class="dashang" onclick="dashangToggle()">赏</a>
+        </p>
+        
+        
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2016-2020 Yelog
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
 
+    </div>
+</div>
+<div class="full-toc">
+    <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
 
+</div>
 
-      </div>
-    </footer>
-  </div>
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>喜欢就点赞,疼爱就打赏</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
+    </div>
+</div>
 
-  
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/muse.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
 
 </body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
 </html>
